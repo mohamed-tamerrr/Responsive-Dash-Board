@@ -5,12 +5,17 @@ class Assets {
   /// Assets for imagesAvatar 1
   /// assets/images/avatar 1.svg
   static const String imagesAvatar1 =
-      "assets/images/avatar 1.svg";
+      "assets/images/avatar1.svg";
 
   /// Assets for imagesAvatar 2
   /// assets/images/avatar 2.svg
   static const String imagesAvatar2 =
-      "assets/images/avatar 2.svg";
+      "assets/images/avatar2.svg";
+
+  /// Assets for imagesAvatar3
+  /// assets/images/avatar3.svg
+  static const String imagesAvatar3 =
+      "assets/images/avatar3.svg";
 
   /// Assets for imagesCard
   /// assets/images/card.svg
