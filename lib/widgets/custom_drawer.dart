@@ -26,7 +26,7 @@ class CustomDrawer extends StatelessWidget {
             hasScrollBody: false,
             child: Column(
               children: [
-                Spacer(),
+                Expanded(child: SizedBox(height: 20)),
                 InActiveItem(
                   item: DrawerItemModel(
                     image: Assets.imagesSetting,
