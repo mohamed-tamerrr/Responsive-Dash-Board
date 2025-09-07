@@ -12,8 +12,8 @@ class QuickInvoiceHeader extends StatelessWidget {
           'Quick Invoice',
           style: AppStyle.styleSemiBold20,
         ),
-        // Spacer(),
-        SizedBox(width: 20),
+        Spacer(),
+
         Container(
           decoration: BoxDecoration(
             shape: BoxShape.circle,
