@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/widgets/custom_button.dart';
 import 'package:responsive_dash_board/widgets/text_tile.dart';
 
 class QuickInvoiceForm extends StatelessWidget {
@@ -39,6 +40,23 @@ class QuickInvoiceForm extends StatelessWidget {
               child: TextTile(
                 msg: 'USD',
                 title: 'Item mount',
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: 24),
+        Row(
+          children: [
+            Expanded(
+              child: CustomButton(
+                textColor: Color(0xFF4DB7F2),
+                backgourndColor: Color(0xffFFFFFF),
+              ),
+            ),
+            SizedBox(height: 24),
+            Expanded(
+              child: CustomButton(
+                textColor: Color(0xffFFFFFF),
               ),
             ),
           ],
