@@ -2,15 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/utils/app_style.dart';
 
 class CustomTextField extends StatelessWidget {
-  const CustomTextField({super.key});
-
+  const CustomTextField({super.key, required this.msg});
+  final String msg;
   @override
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
         hint: Text(
-          'Type customer name',
-          style: AppStyle.styleRegular16,
+          msg,
+          style: AppStyle.styleRegular16.copyWith(
+            color: Color(0xffAAAAAA),
+          ),
         ),
         filled: true,
         fillColor: Color(0xffFAFAFA),

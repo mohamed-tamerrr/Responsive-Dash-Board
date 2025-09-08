@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/widgets/custom_background.dart';
 import 'package:responsive_dash_board/widgets/custom_text_field.dart';
 import 'package:responsive_dash_board/widgets/latest_transactions.dart';
+import 'package:responsive_dash_board/widgets/quick_invoice_form.dart';
 import 'package:responsive_dash_board/widgets/quick_invoice_header.dart';
+import 'package:responsive_dash_board/widgets/text_tile.dart';
 
 class QuickInvoice extends StatelessWidget {
   const QuickInvoice({super.key});
@@ -16,7 +18,7 @@ class QuickInvoice extends StatelessWidget {
           SizedBox(height: 24),
           LatestTransaction(),
           Divider(height: 48),
-          CustomTextField(),
+          QuickInvoiceForm(),
         ],
       ),
     );
