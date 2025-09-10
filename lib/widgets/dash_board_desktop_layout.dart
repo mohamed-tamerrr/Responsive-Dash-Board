@@ -4,6 +4,7 @@ import 'package:responsive_dash_board/widgets/all_expenses_and_quick_invoice.dar
 import 'package:responsive_dash_board/widgets/custom_dot.dart';
 import 'package:responsive_dash_board/widgets/custom_drawer.dart';
 import 'package:responsive_dash_board/widgets/dots_indicator.dart';
+import 'package:responsive_dash_board/widgets/income_section.dart';
 import 'package:responsive_dash_board/widgets/my_card.dart';
 import 'package:responsive_dash_board/widgets/my_card_and_transaction_history.dart';
 import 'package:responsive_dash_board/widgets/my_card_page_view.dart';
@@ -25,9 +26,7 @@ class DashBoardDesktopLayout extends StatelessWidget {
           child: AllExpensesAndQuickInvoice(),
         ),
         SizedBox(width: 24),
-        Expanded(
-          child: MyCardsAndTransctionHistorySection(),
-        ),
+        Expanded(child: IncomeSection()),
       ],
     );
   }
