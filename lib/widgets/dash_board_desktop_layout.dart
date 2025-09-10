@@ -8,6 +8,7 @@ import 'package:responsive_dash_board/widgets/my_card.dart';
 import 'package:responsive_dash_board/widgets/my_card_page_view.dart';
 import 'package:responsive_dash_board/widgets/my_card_section.dart';
 import 'package:responsive_dash_board/widgets/quick_invoice.dart';
+import 'package:responsive_dash_board/widgets/transactions_history.dart';
 
 class DashBoardDesktopLayout extends StatelessWidget {
   const DashBoardDesktopLayout({super.key});
@@ -23,7 +24,7 @@ class DashBoardDesktopLayout extends StatelessWidget {
           child: AllExpensesAndQuickInvoice(),
         ),
         SizedBox(width: 24),
-        Expanded(child: MyCardsSection()),
+        Expanded(child: TransactionsHistory()),
       ],
     );
   }
