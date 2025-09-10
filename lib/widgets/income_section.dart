@@ -2,6 +2,7 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/utils/app_style.dart';
 import 'package:responsive_dash_board/widgets/custom_background.dart';
+import 'package:responsive_dash_board/widgets/income_details.dart';
 import 'package:responsive_dash_board/widgets/range_options.dart';
 
 class IncomeSection extends StatelessWidget {
@@ -15,7 +16,11 @@ class IncomeSection extends StatelessWidget {
           IncomeSectionHeader(),
           Expanded(
             child: Row(
-              children: [Expanded(child: IncomeChart())],
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(child: IncomeChart()),
+                Expanded(child: IncomeDetails()),
+              ],
             ),
           ),
         ],
@@ -51,46 +56,50 @@ class _IncomeChartState extends State<IncomeChart> {
 
   @override
   Widget build(BuildContext context) {
-    return PieChart(
-      PieChartData(
-        pieTouchData: PieTouchData(
-          enabled: true,
-          touchCallback: (FlTouchEvent, PieTouchResponse) {
-            currentIndex =
-                PieTouchResponse
-                    ?.touchedSection
-                    ?.touchedSectionIndex ??
-                -1;
-            setState(() {});
-          },
+    return AspectRatio(
+      aspectRatio: 1,
+      child: PieChart(
+        PieChartData(
+          pieTouchData: PieTouchData(
+            enabled: true,
+            touchCallback:
+                (FlTouchEvent, PieTouchResponse) {
+                  currentIndex =
+                      PieTouchResponse
+                          ?.touchedSection
+                          ?.touchedSectionIndex ??
+                      -1;
+                  setState(() {});
+                },
+          ),
+          sectionsSpace: 0,
+          sections: [
+            PieChartSectionData(
+              radius: currentIndex == 0 ? 60 : 40,
+              showTitle: false,
+              value: 40,
+              color: Color(0xff208CC8),
+            ),
+            PieChartSectionData(
+              radius: currentIndex == 1 ? 60 : 40,
+              showTitle: false,
+              value: 25,
+              color: Color(0xff4EB7F2),
+            ),
+            PieChartSectionData(
+              radius: currentIndex == 2 ? 60 : 40,
+              showTitle: false,
+              value: 20,
+              color: Color(0xff064061),
+            ),
+            PieChartSectionData(
+              radius: currentIndex == 3 ? 60 : 40,
+              showTitle: false,
+              value: 22,
+              color: Color(0xffE2DECD),
+            ),
+          ],
         ),
-        sectionsSpace: 0,
-        sections: [
-          PieChartSectionData(
-            radius: currentIndex == 0 ? 60 : 40,
-            showTitle: false,
-            value: 40,
-            color: Color(0xff208CC8),
-          ),
-          PieChartSectionData(
-            radius: currentIndex == 1 ? 60 : 40,
-            showTitle: false,
-            value: 25,
-            color: Color(0xff4EB7F2),
-          ),
-          PieChartSectionData(
-            radius: currentIndex == 2 ? 60 : 40,
-            showTitle: false,
-            value: 20,
-            color: Color(0xff064061),
-          ),
-          PieChartSectionData(
-            radius: currentIndex == 3 ? 60 : 40,
-            showTitle: false,
-            value: 22,
-            color: Color(0xffE2DECD),
-          ),
-        ],
       ),
     );
   }
