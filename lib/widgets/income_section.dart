@@ -61,9 +61,9 @@ class _IncomeChartState extends State<IncomeChart> {
           pieTouchData: PieTouchData(
             enabled: true,
             touchCallback:
-                (FlTouchEvent, PieTouchResponse) {
+                (flTouchEvent, pieTouchResponse) {
                   currentIndex =
-                      PieTouchResponse
+                      pieTouchResponse
                           ?.touchedSection
                           ?.touchedSectionIndex ??
                       -1;
