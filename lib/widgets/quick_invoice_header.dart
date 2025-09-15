@@ -10,7 +10,7 @@ class QuickInvoiceHeader extends StatelessWidget {
       children: [
         Text(
           'Quick Invoice',
-          style: AppStyle.styleSemiBold20,
+          style: AppStyle.styleSemiBold20(context),
         ),
         Spacer(),
 

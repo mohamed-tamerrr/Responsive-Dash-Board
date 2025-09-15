@@ -14,7 +14,7 @@ class InActiveItem extends StatelessWidget {
       leading: SvgPicture.asset(item.image),
       title: Text(
         item.title,
-        style: AppStyle.styleRegular16,
+        style: AppStyle.styleRegular16(context),
       ),
     );
   }
@@ -29,7 +29,10 @@ class ActiveItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: SvgPicture.asset(item.image),
-      title: Text(item.title, style: AppStyle.styleBold16),
+      title: Text(
+        item.title,
+        style: AppStyle.styleBold16(context),
+      ),
       trailing: Container(
         width: 3.27,
         color: Color(0xff4EB7F2),

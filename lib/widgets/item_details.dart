@@ -22,11 +22,11 @@ class ItemDetails extends StatelessWidget {
       ),
       title: Text(
         itemDetailsModel.title,
-        style: AppStyle.styleRegular16,
+        style: AppStyle.styleRegular16(context),
       ),
       trailing: Text(
         itemDetailsModel.value,
-        style: AppStyle.styleMedium16,
+        style: AppStyle.styleMedium16(context),
       ),
     );
   }
