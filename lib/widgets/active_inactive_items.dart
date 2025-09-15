@@ -12,9 +12,13 @@ class InActiveItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: SvgPicture.asset(item.image),
-      title: Text(
-        item.title,
-        style: AppStyle.styleRegular16(context),
+      title: FittedBox(
+        alignment: AlignmentGeometry.centerLeft,
+        fit: BoxFit.scaleDown,
+        child: Text(
+          item.title,
+          style: AppStyle.styleRegular16(context),
+        ),
       ),
     );
   }
