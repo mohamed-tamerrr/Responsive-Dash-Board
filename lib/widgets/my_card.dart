@@ -64,9 +64,11 @@ class MyCard extends StatelessWidget {
                       context,
                     ).copyWith(color: Colors.white),
                   ),
-                  SizedBox(height: 54 - 28),
                 ],
               ),
+            ),
+            const Flexible(
+              child: SizedBox(height: 54 - 28),
             ),
           ],
         ),
