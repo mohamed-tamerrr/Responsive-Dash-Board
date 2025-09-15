@@ -38,28 +38,72 @@ class _AllExpensesItemListState
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: items.asMap().entries.map((e) {
-        int index = e.key;
-        var item = e.value;
-        return Expanded(
-          child: Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal: index == 1 ? 12 : 0,
-            ),
-            child: GestureDetector(
-              onTap: () {
-                setState(() {
-                  update(index);
-                });
-              },
-              child: AllExpensesItem(
-                item: item,
-                isActive: isSelected == index,
-              ),
+      children: [
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              setState(() {
+                update(0);
+              });
+            },
+            child: AllExpensesItem(
+              item: items[0],
+              isActive: isSelected == 0,
             ),
           ),
-        );
-      }).toList(),
+        ),
+        SizedBox(width: 12),
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              setState(() {
+                update(1);
+              });
+            },
+            child: AllExpensesItem(
+              item: items[1],
+              isActive: isSelected == 1,
+            ),
+          ),
+        ),
+        SizedBox(width: 12),
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              setState(() {
+                update(2);
+              });
+            },
+            child: AllExpensesItem(
+              item: items[2],
+              isActive: isSelected == 2,
+            ),
+          ),
+        ),
+      ],
+
+      //  items.asMap().entries.map((e) {
+      //   int index = e.key;
+      //   var item = e.value;
+      //   return Expanded(
+      //     child: Padding(
+      //       padding: EdgeInsets.symmetric(
+      //         horizontal: index == 1 ? 12 : 0,
+      //       ),
+      //       child: GestureDetector(
+      //         onTap: () {
+      //           setState(() {
+      //             update(index);
+      //           });
+      //         },
+      //         child: AllExpensesItem(
+      //           item: item,
+      //           isActive: isSelected == index,
+      //         ),
+      //       ),
+      //     ),
+      //   );
+      // }).toList(),
     );
   }
 

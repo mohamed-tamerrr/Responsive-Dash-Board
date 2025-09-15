@@ -20,7 +20,7 @@ class InActiveAllExpensesItem extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        color: Colors.white,
+        color: const Color.fromRGBO(255, 255, 255, 1),
         border: Border.all(
           color: Color(0xffF1F1F1),
           width: 2,
@@ -41,9 +41,12 @@ class InActiveAllExpensesItem extends StatelessWidget {
             style: AppStyle.styleRegular14(context),
           ),
           SizedBox(height: 16),
-          Text(
-            item.money,
-            style: AppStyle.styleSemiBold24(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              item.money,
+              style: AppStyle.styleSemiBold24(context),
+            ),
           ),
         ],
       ),
@@ -69,6 +72,10 @@ class ActiveAllExpensesItem extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
         color: Color(0xff4EB7F2),
+        border: Border.all(
+          color: Color(0xff4EB7F2),
+          width: 2,
+        ),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -95,11 +102,14 @@ class ActiveAllExpensesItem extends StatelessWidget {
             ).copyWith(color: Color(0xffFAFAFA)),
           ),
           SizedBox(height: 16),
-          Text(
-            item.money,
-            style: AppStyle.styleSemiBold24(
-              context,
-            ).copyWith(color: Colors.white),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              item.money,
+              style: AppStyle.styleSemiBold24(
+                context,
+              ).copyWith(color: Colors.white),
+            ),
           ),
         ],
       ),
