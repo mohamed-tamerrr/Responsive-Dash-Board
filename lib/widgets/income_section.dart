@@ -1,15 +1,9 @@
-import 'dart:developer';
-
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/utils/app_style.dart';
-import 'package:responsive_dash_board/widgets/custom_background.dart';
-import 'package:responsive_dash_board/widgets/income_details.dart';
-import 'package:responsive_dash_board/widgets/inome_section_body.dart';
-import 'package:responsive_dash_board/widgets/latest_transactions.dart';
-import 'package:responsive_dash_board/widgets/my_card.dart';
-import 'package:responsive_dash_board/widgets/range_options.dart';
-import 'package:responsive_dash_board/widgets/transactions_history.dart';
+import '../utils/app_style.dart';
+import 'custom_background.dart';
+import 'inome_section_body.dart';
+import 'range_options.dart';
 
 class IncomeSection extends StatelessWidget {
   const IncomeSection({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/models/transaction_model.dart';
-import 'package:responsive_dash_board/utils/app_style.dart';
+import '../models/transaction_model.dart';
+import '../utils/app_style.dart';
 
 class TransctionItem extends StatelessWidget {
   const TransctionItem({

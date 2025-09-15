@@ -1,9 +1,7 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/models/drawer_item_model.dart';
-import 'package:responsive_dash_board/utils/app_images.dart';
-import 'package:responsive_dash_board/widgets/drawer_item.dart';
+import '../models/drawer_item_model.dart';
+import '../utils/app_images.dart';
+import 'drawer_item.dart';
 
 class DrawerItemsList extends StatefulWidget {
   const DrawerItemsList({super.key});

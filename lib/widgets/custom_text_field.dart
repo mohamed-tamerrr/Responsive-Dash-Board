@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/utils/app_style.dart';
+
+import '../utils/app_style.dart';
 
 class CustomTextField extends StatelessWidget {
   const CustomTextField({super.key, required this.msg});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/widgets/all_expenses.dart';
-import 'package:responsive_dash_board/widgets/quick_invoice.dart';
+import 'all_expenses.dart';
+import 'quick_invoice.dart';
 
 class AllExpensesAndQuickInvoice extends StatelessWidget {
   const AllExpensesAndQuickInvoice({super.key});

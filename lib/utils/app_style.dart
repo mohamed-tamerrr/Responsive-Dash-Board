@@ -1,7 +1,5 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/utils/size_config.dart';
+import 'size_config.dart';
 
 abstract class AppStyle {
   static TextStyle styleRegular12(context) {

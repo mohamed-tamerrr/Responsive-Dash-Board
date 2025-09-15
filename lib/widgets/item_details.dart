@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/models/item_details_model.dart';
-import 'package:responsive_dash_board/utils/app_style.dart';
+import '../models/item_details_model.dart';
+import '../utils/app_style.dart';
 
 class ItemDetails extends StatelessWidget {
   const ItemDetails({

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/utils/app_style.dart';
-import 'package:responsive_dash_board/widgets/dots_indicator.dart';
-import 'package:responsive_dash_board/widgets/my_card_page_view.dart';
+import '../utils/app_style.dart';
+import 'dots_indicator.dart';
+import 'my_card_page_view.dart';
 
 class MyCardsSection extends StatefulWidget {
   const MyCardsSection({super.key});

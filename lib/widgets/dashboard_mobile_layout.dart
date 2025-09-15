@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/widgets/all_expenses_and_quick_invoice.dart';
-import 'package:responsive_dash_board/widgets/income_section.dart';
-import 'package:responsive_dash_board/widgets/my_card_and_transaction_history.dart';
+import 'all_expenses_and_quick_invoice.dart';
+import 'income_section.dart';
+import 'my_card_and_transaction_history.dart';
 
 class DashBoardMobileLayout extends StatelessWidget {
   const DashBoardMobileLayout({super.key});
