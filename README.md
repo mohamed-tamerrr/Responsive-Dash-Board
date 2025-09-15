@@ -14,5 +14,5 @@ This project demonstrates Flutter’s capability to build beautiful, fast, and c
 
 ---
 
-![Logo](dashboard.jpg)
+![Logo](web.png)
 
